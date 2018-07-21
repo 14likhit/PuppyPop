@@ -154,7 +154,7 @@ public class PlayState extends State  {
         bag.setProjectionMatrix(camera.combined);
         bag.begin();
         //set respective assests on screen
-        bag.draw(bg,camera.position.x-(camera.viewportWidth/2),0);
+        bag.draw(bg,camera.position.x-(camera.viewportWidth/2),camera.position.y-(camera.viewportHeight/2),camera.viewportWidth,camera.viewportHeight);
         bag.draw(puppy.getPuppy(),puppy.getPosition().x,puppy.getPosition().y);
         scoreBitmapFontName.setColor(1.0f, 1.0f, 1.0f, 1.0f);
         scoreBitmapFontName.draw(bag, yourScore, camera.position.x-(camera.viewportWidth/2), 2*camera.position.y);

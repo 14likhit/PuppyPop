@@ -20,7 +20,7 @@ public class PuppyPop extends ApplicationAdapter {
 	public void create () {
 		batch = new SpriteBatch();
 		gsm=new GameStateManager();
-		Gdx.gl.glClearColor(1, 0, 0, 1);
+		Gdx.gl.glClearColor(19, 113, 160, 1);
 		//on create start MenuState
 		gsm.push(new MenuState(gsm));
 	}

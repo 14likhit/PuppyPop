@@ -87,7 +87,7 @@ public class ScoreCard extends State implements InputProcessor{
         sb.setProjectionMatrix(camera.combined);
         sb.begin();
 
-        sb.draw(background, camera.position.x - (camera.viewportWidth / 2), - (-70) / 2);
+        sb.draw(background, camera.position.x - (camera.viewportWidth / 2), camera.position.y-(camera.viewportHeight/2),camera.viewportWidth,camera.viewportHeight);
         title.draw(sb, titleLayout, camera.viewportWidth / 2 - titleLayout.width / 2, camera.viewportHeight / 2 + 100);
         highScoreType.draw(sb, highScoreTypeLayout, camera.viewportWidth / 2 - highScoreTypeLayout.width / 2, camera.viewportHeight / 2 + 65);
         sb.draw(playBtn,background.getWidth()/2-playBtn.getWidth()/2-5,background.getHeight()/2-playBtn.getHeight()-25);
